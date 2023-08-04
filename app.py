@@ -357,5 +357,5 @@ with iface:
 # <p>This demo is strictly for research demo purpose only. For commercial use please <a href="haoheliu@gmail.com">contact us</a>.</p>
 
 iface.queue(concurrency_count=3)
-# iface.launch(debug=True)
-iface.launch(debug=True, share=True)
+iface.launch(debug=True)
+# iface.launch(debug=True, share=True)
