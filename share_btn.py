@@ -67,7 +67,7 @@ ${urlOutputVideo}
         description: descriptionMd,
     });
 	const paramsStr = params.toString();
-	window.open(`https://huggingface.co/spaces/haoheliu/audioldm-text-to-audio-generation/discussions/new?${paramsStr}`, '_blank');
+	window.open(`https://huggingface.co/spaces/haoheliu/audioldm2-text2audio-text2music/discussions/new?${paramsStr}`, '_blank');
     shareBtnEl.style.removeProperty('pointer-events');
     shareIconEl.style.removeProperty('display');
     loadingIconEl.style.display = 'none';
