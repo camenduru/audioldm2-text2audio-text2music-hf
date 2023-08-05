@@ -9,7 +9,7 @@ from share_btn import community_icon_html, loading_icon_html, share_js
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 
-default_checkpoint="audioldm2-full-large-650k"
+default_checkpoint="audioldm2-full"
 audioldm = None
 current_model_name = None
 
