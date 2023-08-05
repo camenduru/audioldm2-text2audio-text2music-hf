@@ -8,9 +8,8 @@ from share_btn import community_icon_html, loading_icon_html, share_js
 
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
-model_id = "haoheliu/audioldm2-full"
-hf_hub_download(repo_id="haoheliu/audioldm2-full", filename="audioldm2-full.pth")
 
+default_checkpoint="audioldm2-full-large-650k"
 audioldm = None
 current_model_name = None
 
@@ -19,7 +18,7 @@ def text2audio(
     guidance_scale,
     random_seed,
     n_candidates,
-    model_name="audioldm2-full",
+    model_name=default_checkpoint,
 ):
     global audioldm, current_model_name
     torch.set_float32_matmul_precision("high")
@@ -298,35 +297,35 @@ with iface:
                     3.5,
                     45,
                     3,
-                    "audioldm2-full",
+                    default_checkpoint,
                 ],
                 [
                     "A cat is meowing for attention.",
                     3.5,
                     45,
                     3,
-                    "audioldm2-full",
+                    default_checkpoint,
                 ],
                 [
                     "Birds singing sweetly in a blooming garden.",
                     3.5,
                     45,
                     3,
-                    "audioldm2-full",
+                    default_checkpoint,
                 ],
                 [
                     "A modern synthesizer creating futuristic soundscapes.",
                     3.5,
                     45,
                     3,
-                    "audioldm2-full",
+                    default_checkpoint,
                 ],
                 [
                     "The vibrant beat of Brazilian samba drums.",
                     3.5,
                     45,
                     3,
-                    "audioldm2-full",
+                    default_checkpoint,
                 ],
             ],
             fn=text2audio,
