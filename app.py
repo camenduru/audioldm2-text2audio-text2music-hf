@@ -2,11 +2,11 @@ from huggingface_hub import hf_hub_download
 import torch
 import os
 
-os.environ["TOKENIZERS_PARALLELISM"] = "true"
-
 import gradio as gr
 from audioldm2 import text_to_audio, build_model
 from share_btn import community_icon_html, loading_icon_html, share_js
+
+os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 model_id = "haoheliu/audioldm2-full"
 hf_hub_download(repo_id="haoheliu/audioldm2-full", filename="audioldm2-full.pth")
