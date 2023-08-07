@@ -207,9 +207,6 @@ with iface:
     )
     gr.HTML(
         """
-        <h1 style="font-weight: 900; margin-bottom: 7px;">
-        AudioLDM 2: A General Framework for Audio, Music, and Speech Generation
-        </h1>
         <p>For faster inference without waiting in queue, you may duplicate the space and upgrade to GPU in settings.
         <br/>
         <a href="https://huggingface.co/spaces/haoheliu/audioldm2-text2audio-text2music?duplicate=true">
