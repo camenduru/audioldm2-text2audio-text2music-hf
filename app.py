@@ -200,7 +200,7 @@ with iface:
                 </h1>
               </div>
               <p style="margin-bottom: 10px; font-size: 94%">
-                <a href="https://arxiv.org/abs/2301.12503">[Paper]</a>  <a href="https://audioldm.github.io/audioldm2">[Project page]</a>
+                <a href="https://arxiv.org/abs/2301.12503">[Paper]</a>  <a href="https://audioldm.github.io/audioldm2">[Project page]</a> <a href="https://discord.com/invite/b64SEmdf">[Join Discord]</a>
               </p>
             </div>
         """
@@ -282,7 +282,7 @@ with iface:
         gr.HTML(
             """
         <div class="footer" style="text-align: center; max-width: 700px; margin: 0 auto;">
-                    <p>Follow the latest update of AudioLDM on our<a href="https://github.com/haoheliu/AudioLDM2" style="text-decoration: underline;" target="_blank"> Github repo</a>
+                    <p>Follow the latest update of AudioLDM 2 on our<a href="https://github.com/haoheliu/AudioLDM2" style="text-decoration: underline;" target="_blank"> Github repo</a>
                     </p>
                     <br>
                     <p>Model by <a href="https://twitter.com/LiuHaohe" style="text-decoration: underline;" target="_blank">Haohe Liu</a></p>
@@ -338,7 +338,7 @@ with iface:
             """
                 <div class="acknowledgements">
                 <p>Essential Tricks for Enhancing the Quality of Your Generated Audio</p>
-                <p>1. Try to use more adjectives to describe your sound. For example: "A man is speaking clearly and slowly in a large room" is better than "A man is speaking". This can make sure AudioLDM understands what you want.</p>
+                <p>1. Try to use more adjectives to describe your sound. For example: "A man is speaking clearly and slowly in a large room" is better than "A man is speaking". This can make sure AudioLDM 2 understands what you want.</p>
                 <p>2. Try to use different random seeds, which can affect the generation quality significantly sometimes.</p>
                 <p>3. It's better to use general terms like 'man' or 'woman' instead of specific names for individuals or abstract objects that humans may not be familiar with, such as 'mummy'.</p>
                 </div>
