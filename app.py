@@ -52,6 +52,7 @@ css = """
         }
         .gradio-container {
             font-family: 'IBM Plex Sans', sans-serif;
+            max-width: 730px !important;
         }
         .gr-button {
             color: white;
@@ -65,7 +66,6 @@ css = """
             accent-color: #dfdfdf;
         }
         .container {
-            max-width: 730px;
             margin: auto;
             padding-top: 1.5rem;
         }
@@ -207,9 +207,8 @@ with iface:
     )
     gr.HTML(
         """
-        <p>For faster inference without waiting in queue, you may duplicate the space and upgrade to GPU in settings.
-        <br/>
-        <a href="https://huggingface.co/spaces/haoheliu/audioldm2-text2audio-text2music?duplicate=true">
+        <p style="display:flex">For faster inference without a queue 
+        <a style="margin-left: .5em" href="https://huggingface.co/spaces/haoheliu/audioldm2-text2audio-text2music?duplicate=true">
         <img style="margin-top: 0em; margin-bottom: 0em" src="https://bit.ly/3gLdBN6" alt="Duplicate Space"></a>
         <p/>
     """
@@ -220,7 +219,8 @@ with iface:
             textbox = gr.Textbox(
                 value="A forest of wind chimes singing a soothing melody in the breeze.",
                 max_lines=1,
-                label="Input your text here. Your text is important for the audio quality. Please ensure it is descriptive by using more adjectives.",
+                label="Input your prompt here",
+                info="Your text is important for the audio quality. Please ensure it is descriptive by using more adjectives.",
                 elem_id="prompt-in",
             )
 
