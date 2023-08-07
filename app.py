@@ -200,7 +200,7 @@ with iface:
                 </h1>
               </div>
               <p style="margin-bottom: 10px; font-size: 94%">
-                <a href="https://arxiv.org/abs/2301.12503">[Paper]</a>  <a href="https://audioldm.github.io/">[Project page]</a>
+                <a href="https://arxiv.org/abs/2301.12503">[Paper]</a>  <a href="https://audioldm.github.io/audioldm2">[Project page]</a>
               </p>
             </div>
         """
@@ -282,7 +282,7 @@ with iface:
         gr.HTML(
             """
         <div class="footer" style="text-align: center; max-width: 700px; margin: 0 auto;">
-                    <p>Follow the latest update of AudioLDM on our<a href="https://github.com/haoheliu/AudioLDM" style="text-decoration: underline;" target="_blank"> Github repo</a>
+                    <p>Follow the latest update of AudioLDM on our<a href="https://github.com/haoheliu/AudioLDM2" style="text-decoration: underline;" target="_blank"> Github repo</a>
                     </p>
                     <br>
                     <p>Model by <a href="https://twitter.com/LiuHaohe" style="text-decoration: underline;" target="_blank">Haohe Liu</a></p>
