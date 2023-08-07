@@ -4,7 +4,6 @@ import os
 
 import gradio as gr
 from audioldm2 import text_to_audio, build_model
-from share_btn import community_icon_html, loading_icon_html, share_js
 
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
@@ -252,20 +251,7 @@ with iface:
             ############# Output
             # outputs=gr.Audio(label="Output", type="numpy")
             outputs = gr.Video(label="Output", elem_id="output-video")
-
-            # with gr.Group(elem_id="container-advanced-btns"):
-            #   # advanced_button = gr.Button("Advanced options", elem_id="advanced-btn")
-            #   with gr.Group(elem_id="share-btn-container"):
-            #     community_icon = gr.HTML(community_icon_html, visible=False)
-            #     loading_icon = gr.HTML(loading_icon_html, visible=False)
-            #     share_button = gr.Button("Share to community", elem_id="share-btn", visible=False)
-            # outputs=[gr.Audio(label="Output", type="numpy"), gr.Audio(label="Output", type="numpy")]
             btn = gr.Button("Submit").style(full_width=True)
-
-        with gr.Group(elem_id="share-btn-container", visible=False):
-            community_icon = gr.HTML(community_icon_html)
-            loading_icon = gr.HTML(loading_icon_html)
-            share_button = gr.Button("Share to community", elem_id="share-btn")
 
         # btn.click(text2audio, inputs=[
         #           textbox, duration, guidance_scale, seed, n_candidates, model_name], outputs=[outputs])
@@ -274,8 +260,6 @@ with iface:
             inputs=[textbox, guidance_scale, seed, n_candidates],
             outputs=[outputs],
         )
-
-        share_button.click(None, [], [], _js=share_js)
         gr.HTML(
             """
         <div class="footer" style="text-align: center; max-width: 700px; margin: 0 auto;">
@@ -353,5 +337,5 @@ with iface:
 # <p>This demo is strictly for research demo purpose only. For commercial use please <a href="haoheliu@gmail.com">contact us</a>.</p>
 
 iface.queue(concurrency_count=3)
-iface.launch(debug=True)
+iface.launch(debug=True, share=True)
 # iface.launch(debug=True, share=True)
